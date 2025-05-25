@@ -54,6 +54,7 @@ const Contact = () => {
           className="bg-[#ccd6f6] p-2 mb-4 rounded"
           type="text"
           name="name"
+          rows="2"
           placeholder="Your Name"
           value={form.name}
           onChange={handleChange}
@@ -63,6 +64,7 @@ const Contact = () => {
           className="bg-[#ccd6f6] p-2 mb-4 rounded"
           type="email"
           name="email"
+          rows="2"
           placeholder="Your Email"
           value={form.email}
           onChange={handleChange}
