@@ -5,9 +5,14 @@ const Header = () => (
     <img src={profilePic} alt="Profile" className="profile-pic" />
     <h1>Bhavana Gullapalli</h1>
     <p className="subtitle">Web Developer | MERN Stack</p>
-    <a className="btn" href={resume} download="resume.png">  
-      <img src={resume} alt="Resume" className="resume-img" />
-      Download Resume
+    <a
+      className="btn"
+      href={resume}
+      target="_blank"
+      rel="noopener noreferrer"
+      download="Bhavana_Gullapalli_Resume.png"
+    >
+      View / Download Resume
     </a>
   </div>
 )
