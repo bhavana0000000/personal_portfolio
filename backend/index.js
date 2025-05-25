@@ -17,26 +17,25 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.json());
 
-// THIS IS THE ROUTE YOU NEED:
+
 app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
   // Example: Just log and reply for now
   console.log('Contact form received:', { name, email, message });
 
-  // You can add nodemailer logic here if needed
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'bhavn2345@gmail.com',      // replace with your email
-      pass: 'Boo@2345',       // replace with your app password
+      user: 'bhavn2345@gmail.com',      
+      pass: 'Boo@2345',       
     },
   });
 
   // Email options
   let mailOptions = {
     from: email,
-    to: 'bhavn2345@gmail.com',          // where you want to receive messages
+    to: 'bhavn2345@gmail.com',          
     subject: `Portfolio Contact from ${name}`,
     text: message,
   };
