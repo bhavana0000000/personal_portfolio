@@ -5,7 +5,7 @@ const Projects = () => (
     <h2>Projects</h2>
     <div className="projects-grid">
       {projects.map((project) => (
-        <div className="project-card" key={project.title}>
+        <div className="project-card" key={project.id}>
           <img src={project.image} alt={project.title} />
           <h3>{project.title}</h3>
           <p>{project.description}</p>
